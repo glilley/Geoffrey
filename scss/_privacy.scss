@@ -1,0 +1,34 @@
+.privacy {
+	width: 90%;
+	margin: 0 auto;
+
+	h1{
+	@include font-merriweather;
+		color: $orange;
+		text-align: center;
+	}
+	h2{
+		@include font-merriweather;
+		color: $grey;
+	}
+	@include breakpoint(baby-bear){
+		width: 80%;
+		max-width: 40em;
+	}
+	p {
+		font-family: "PT Sans", sans-serif;
+		color: #666;
+		background-color: #f2f2f2;
+		padding: .5em;
+		@include border-radius(.5em);
+	}
+	a {
+		font-family: "PT Sans", sans-serif;
+		color: $blue;
+		&:hover, &:active{
+			color: $orange;
+		}
+	
+	}	
+}
+.bottom {padding-bottom: 1em;}

@@ -1,0 +1,34 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(../js/boxsizing.htc);
+ 
+ }
+.clearfix {
+	@include clearfix;
+}
+// *
+// {list-style: none;}
+// ======Breakpoints
+
+ @mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (min-width: 60em) { @content; } // = 900px
+  }
+  @else if $point == mama-bear{
+    @media (min-width: 56.25em)  { @content; } //= 750px
+  }
+  @else if $point == auntie-bear{
+    @media (min-width: 46.875em)  { @content; } //= 750px
+  }
+   @else if $point == cousin-bear{
+    @media (min-width: 45em)  { @content; } //= 450px
+  }
+  @else if $point == sister-bear{
+    @media (min-width: 28.125em)  { @content; } //= 450px
+  }
+  @else if $point == special-bear{
+    @media (min-width: 32em) {@content;} //= 448px
+  }
+  @else if $point == baby-bear{
+    @media (min-width: 30em)  { @content; } //= 480px
+  }
+}

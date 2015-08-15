@@ -1,0 +1,42 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+@mixin font-merriweather{
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+}
+@mixin font-pt-sans{
+	font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+	font-weight: 400;
+}
+
+// ==============Colors
+$orange: #ff6633;
+$blue: #3bc4bd;
+$grey: #888;
+$darkBlue: #2a5653;
+
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+span.bold {
+	font-family: "PT Sans", sans;
+	font-weight: 700;
+}
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;  
+}
+
+:-ms-input-placeholder {  
+   color: #999;  
+}
